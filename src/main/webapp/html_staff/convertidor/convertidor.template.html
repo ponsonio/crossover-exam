@@ -1,0 +1,52 @@
+<div class="row">				
+	<div class="row defaul-box siga_titulo">
+		  <h1 class="siga center-align"> Exchange</h1>
+	</div>	  
+  						
+
+			<div class="row defaul-box">
+                  <div class="col-sm-1">
+                  			<div class="row signup-box">				    
+				    <!--form-->
+					<form class="signup-form">
+							<div class="section">			     
+								<div class="divider input-field "></div> 
+								<label class = "label_siga">
+									Enter the Amount :
+				                  <input type="number" name="amoutn" placeholder="0.00" ng-model="$ctrl.amount" ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01" />                  
+								</label>
+								<label class = "label_siga">
+									Select currecy Base :
+									 <select name="repeatSelect" id="repeatSelect" ng-model="$ctrl.rate_from" class="browser-default">
+									      <option ng-repeat="option in $ctrl.rates" value="{{option.code_from}}">{{option.code_from}}</option>
+									  </select>
+								</label>
+								<label class = "label_siga">
+									Select currency To:
+									 <select name="repeatSelect" id="repeatSelect" ng-model="$ctrl.rate_to" class="browser-default">
+									      <option ng-repeat="option in $ctrl.rates" value="{{option.code_to}}">{{option.code_to}}</option>
+									  </select>
+								</label>		  
+								<label class = "label_siga">
+									Request state :
+				                  <input type="text" name="message" placeholder="" ng-model="$ctrl.message" ng-readonly="all" />                  
+								</label>
+								
+								<label class = "label_siga">
+								 Result :
+				                  <input type="number" name="result" placeholder="0.00" ng-model="$ctrl.result" ng-readonly="all" />                  
+								</label>
+
+								<label class = "label_siga">
+									Rate Used:
+				                  <input type="number" name="current_rate" placeholder="0.00" ng-model="$ctrl.current_rate" ng-readonly="all" />                  
+								</label>
+													
+
+							<button class="btn waves-effect waves-light btn-signup" ng-click="$ctrl.calculate()">Exchange</button>
+						</div>
+					</form>
+			</div>
+
+
+</div>		

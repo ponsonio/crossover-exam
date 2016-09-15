@@ -1,0 +1,84 @@
+body {
+  background: #fafafa;
+  color: #125688;
+}
+
+.bienvenida {
+  max-width: 100%;
+}
+
+.docente {
+  max-width: 50%;
+}
+
+
+.site-footer {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.login-box,
+.signup-box {
+  background-color: white;
+  border: 1px solid #edeeee;
+  border-radius: 3px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.defaul-box {
+  background-color: white;
+  border: 1px solid #edeeee;
+  border-radius: 3px;
+  padding: 10px 0;
+  font-family: 'Oleo Script';
+}
+
+.btn_small {
+  height:20px ; 
+  width:80px ;
+  font-family: 'Oleo Script';
+  font-size: 8px;
+}
+
+.siga_titulo h1{
+  font-family: 'Oleo Script';
+  font-size: 20px;
+  center-align;
+}
+
+.signup-box .siga {
+  font-family: 'Oleo Script';
+  font-size: 12px;
+  left-align;
+}
+
+.signup-form {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.signup-form h2 {
+  color: black;
+  left-align;
+  font-size: 1.2em;
+}
+
+.label_siga {
+  color: black;
+  left-align;
+  font-size: 0.8em;
+}
+.signup-form .btn.btn-fb {
+  background-color: #4090db;
+  font-size: .8em;
+}
+
+
+.signup-form .btn.btn-fb:hover {
+  background-color: #2d6599;
+}
+
+.signup-form .btn.btn-signup {
+  background-color: #125688;
+}

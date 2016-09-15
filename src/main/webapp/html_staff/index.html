@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="siga">
+<head>
+	<title></title>
+		<title>Crossover</title>
+	 <!-- Compiled and minified CSS -->
+   <link href='https://fonts.googleapis.com/css?family=Montserrat|Oleo+Script' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="app.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=no"/>
+	<meta charset="utf-8"/>
+          
+</head>
+<body>
+
+<section id="main-container">
+  <div ng-view></div> 
+</section>
+
+
+
+    <!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    -->
+	    <!-- Obtain latest version of jquery from CDN -->
+	  <script src="http://code.jquery.com/jquery-latest.js"></script>
+	  <!-- jQuery must be imported before materialize -->
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-resource.js"></script>
+    
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+
+	
+	<!-- Core Services -->    
+    <script src="../html_staff/core/airport/airport.module.js"></script>
+    <script src="../html_staff/core/airport/airport.service.js"></script>
+    
+    <script src="../html_staff/core/loginservice/loginservice.module.js"></script>
+    <script src="../html_staff/core/loginservice/loginservice.service.js"></script>
+    
+    <script src="../html_staff/core/ftocservice/ftocservice.module.js"></script>
+    <script src="../html_staff/core/ftocservice/ftocservice.service.js"></script>
+    
+
+    <script src="../html_staff/core/core.module.js"></script>
+
+
+	<!-- views -->
+
+    <script src="../html_staff/convertidor/convertidor.module.js"></script>
+    <script src="../html_staff/convertidor/convertidor.component.js"></script>
+    
+    <script src="../html_staff/login/login.module.js"></script>
+    <script src="../html_staff/login/login.component.js"></script>
+    
+    
+    <script src="../html_staff/airportlist/airportlist.module.js"></script>
+    <script src="../html_staff/airportlist/airportlist.component.js"></script>
+
+    <script src="../html_staff/createairport/createairport.module.js"></script>
+    <script src="../html_staff/createairport/createairport.component.js"></script>    
+
+</body>
+</html>

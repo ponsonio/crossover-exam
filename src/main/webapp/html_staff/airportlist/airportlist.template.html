@@ -1,0 +1,17 @@
+<div class="row">				
+	<div class="row defaul-box siga_titulo">
+		  <h1 class="siga center-align"> Airports</h1>
+	</div>	  
+	<div class="row defaul-box">
+					
+		 <a href="#!/createairport">Create Airport</a>		
+		  <ul class="collection">
+		    <li class="collection-item avatar"  ng-repeat="airport in  $ctrl.airports">
+		      <span class="left-align">{{airport.name}} - {{airport.code}}</span> 
+		      	{{airport.country}} - {{airport.city}} - {{airport.adress}}    
+		      <!-- <a class="waves-effect waves-light btn btn_small">Ver Más</a> -->
+		      <a href="#!" class="collection-item" ng-click=" $ctrl.deleteAirport(airport.id)"  >Delete</a>
+		    </li>
+		  </ul>
+	</div>
+</div>		
